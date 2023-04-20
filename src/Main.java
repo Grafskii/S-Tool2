@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
 
-        int starting_score = 100; // начальные данные
+        int startingScore = 100; // начальные данные
         int price = 100; // цена за каждые 100 рублей
         boolean replenishment = true;
 
@@ -12,10 +12,10 @@ public class Main {
             amount = 500;
         }
 
-        int bonus = starting_score + amount + (amount / price);
+        int bonus = startingScore + amount + (amount / price);
 
         if (bonus < 1000) {
-            bonus = starting_score + amount;
+            bonus = startingScore + amount;
         };
 
         System.out.println("Сумма бонуса: " + bonus);
