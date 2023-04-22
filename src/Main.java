@@ -3,20 +3,20 @@ public class Main {
 
         int startingScore = 100; // начальные данные
         int price = 100; // цена за каждые 100 рублей
-        int x = 1500;
-        int y = 500;
+        int amount = 1500;
+        int amount2 = 500;
 
         int bonus = 0;
-        if (x > 1000) {
-            bonus = x / price;
+        if (amount > 1000) {
+            bonus = amount / price;
         }
-        int score = startingScore + x;
+        int score = startingScore + amount;
 
         int bonus2 = 0;
-        if (y < 1000) {
+        if (amount2 < 1000) {
             bonus2 = 0;
         }
-        int score2 = startingScore + y;
+        int score2 = startingScore + amount2;
 
         System.out.println("Пополнение > 1000");
         System.out.println("Бонус: " + bonus);
